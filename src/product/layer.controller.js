@@ -2,7 +2,7 @@ const {create, findById }= require('../product/layer.repository')
 
 const createProduct = async (req, res) => {
   try {
-    await create(req, res)
+    await create(req)
   } catch (error) {
     throw error;
   }
